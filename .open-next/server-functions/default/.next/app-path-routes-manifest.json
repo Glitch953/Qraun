@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/quran/[surahId]/page": "/quran/[surahId]",
+  "/quran/azkar/page": "/quran/azkar",
+  "/quran/hadiths/page": "/quran/hadiths",
+  "/quran/page": "/quran",
+  "/quran/prayer-times/page": "/quran/prayer-times",
+  "/quran/tasbih/page": "/quran/tasbih"
+}

@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
+  "/quran/[surahId]/page": "app/quran/[surahId]/page.js",
+  "/quran/azkar/page": "app/quran/azkar/page.js",
+  "/quran/hadiths/page": "app/quran/hadiths/page.js",
+  "/quran/page": "app/quran/page.js",
+  "/quran/prayer-times/page": "app/quran/prayer-times/page.js",
+  "/quran/tasbih/page": "app/quran/tasbih/page.js"
+}
