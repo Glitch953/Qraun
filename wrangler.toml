@@ -1,0 +1,8 @@
+name = "qran-app"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_als"]
+pages_build_output_dir = ".vercel/output/static"
+
+[[kv_namespaces]]
+binding = "NEXT_CACHE_WORKERS_KV"
+# id = "your-kv-namespace-id" # Optional, for caching

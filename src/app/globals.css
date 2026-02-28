@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Quran App Specific Colors */
+  --color-quran-green: #064e3b;
+  --color-quran-green-light: #0d9488;
+  --color-quran-green-dark: #022c22;
+  --color-quran-gold: #d4af37;
+  --color-quran-gold-light: #fcd34d;
+  --color-quran-gold-dark: #b45309;
+  --color-quran-navy: #0f172a;
+
+  /* Custom Fonts */
+  --font-sans: var(--font-outfit), sans-serif;
+  --font-arabic: var(--font-amiri), serif;
+}
+
+:root {
+  --background: #faf8f3;
+  --foreground: #1c1710;
+  --card: #ffffff;
+  --card-foreground: #1c1710;
+  --border: #e5ddd0;
+
+  --primary: #064e3b;
+  --primary-foreground: #ffffff;
+  --secondary: #d4af37;
+  --secondary-foreground: #1c1710;
+
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #0a0f0c;
+  --foreground: #e8e2d6;
+  --card: #111a14;
+  --card-foreground: #e8e2d6;
+  --border: #1e2d22;
+
+  --primary: #10b981;
+  --primary-foreground: #022c22;
+  --secondary: #d4af37;
+  --secondary-foreground: #022c22;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4af3730;
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4af3760;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 dark:bg-black/20 dark:border-white/10;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg border border-white/30 dark:bg-black/40 dark:border-white/10 shadow-xl;
+  }
+
+  .text-gold-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300 dark:from-yellow-400 dark:to-yellow-100;
+  }
+
+  /* Ayah card — clean & elegant */
+  .ayah-card-bg {
+    background: #ffffff;
+    border: 1px solid #e5ddd0;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .ayah-card-bg {
+    background: linear-gradient(145deg, #111a14 0%, #0d1610 100%);
+    border: 1px solid #1e2d22;
+    box-shadow: 0 2px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Surah card — subtle, clean */
+  .surah-card-bg {
+    background: #ffffff;
+    border: 1px solid #e5ddd0;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.03);
+  }
+
+  .dark .surah-card-bg {
+    background: linear-gradient(145deg, #131e16 0%, #0e1811 100%);
+    border: 1px solid #1e2d22;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Header */
+  .realistic-header {
+    background: linear-gradient(135deg, #064e3b 0%, #022c22 50%, #0a3d2e 100%);
+    border-bottom: 1px solid #d4af3730;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .dark .realistic-header {
+    background: linear-gradient(135deg, #0a1a0e 0%, #060e08 50%, #0e1f12 100%);
+    border-bottom: 1px solid #d4af3718;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
