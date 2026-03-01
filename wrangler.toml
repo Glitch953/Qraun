@@ -2,6 +2,7 @@ name = "qran-app"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_als"]
 pages_build_output_dir = ".open-next/assets"
+main = ".open-next/assets/_worker.js"
 
 [[kv_namespaces]]
 binding = "NEXT_CACHE_WORKERS_KV"
