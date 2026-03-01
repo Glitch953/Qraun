@@ -101,7 +101,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\ac\\Desktop\\qran app",
+    "outputFileTracingRoot": "C:\\Users\\ac\\Desktop\\Qraun",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -294,11 +294,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "C:\\Users\\ac\\Desktop\\qran app"
+      "root": "C:\\Users\\ac\\Desktop\\Qraun"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "C:\\Users\\ac\\Desktop\\qran app",
+  "appDir": "C:\\Users\\ac\\Desktop\\Qraun",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
